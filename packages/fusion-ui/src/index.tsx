@@ -14,13 +14,6 @@ export { default as LiquidChart } from './components/liquid-chart';
 export { default as ProgressChart } from './components/progress-chart';
 
 export { default as AntColumnChart } from './components/ant-column-chart';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 export * from './components/page-header';
 export * from './components/pro-form';

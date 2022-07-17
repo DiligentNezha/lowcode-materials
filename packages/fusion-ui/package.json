@@ -36,16 +36,10 @@
     "@alifd/pro-layout": "^1.0.1-beta.4",
     "@ant-design/charts": "^1.4.1",
     "@ant-design/plots": "^1.1.1",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     "@antv/data-set": "^0.11.8",
     "@sindresorhus/is": "^4.0.1",
     "ahooks": "^2.10.11",
     "antd": "^4.21.6",
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     "@antv/data-set": "^0.11.8",
     "@sindresorhus/is": "^4.0.1",
     "ahooks": "^2.10.11",
