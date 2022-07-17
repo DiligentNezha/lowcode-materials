@@ -414,6 +414,13 @@ const AntColumnChartMeta: ComponentMetadata = {
                   tip: '设置图形的贴图样式',
                 },
                 setter: 'BoolSetter',
+                extraProps: {
+                  setValue: (target, value) => {
+                    if(value === false) {
+                      target.getProps().setPropValue('legend', false);
+                    }
+                  },
+                },
               },
               {
                 name: 'legend.layout',
@@ -491,12 +498,8 @@ const AntColumnChartMeta: ComponentMetadata = {
                 setter: 'BoolSetter',
                 extraProps: {
                   setValue: (target, value) => {
-                    console.log('xenable', value)
                     if(value === false) {
-                      console.log('target', target)
-                      console.log('target.parent', target.parent.parent)
-                      target.parent.parent.clearValue('xAxis');
-                      console.log('target.parent', target.parent.parent)
+                      target.getProps().setPropValue('xAxis', false);
                     }
                   },
                 },
@@ -549,21 +552,130 @@ const AntColumnChartMeta: ComponentMetadata = {
                   },
                 ]
               },
+            ],
+          },
+          {
+            name: 'yAxis',
+            type: 'group',
+            display: 'accordion',
+            title: {
+              label: 'Y 轴',
+            },
+            items: [
               {
-                name: 'legend.title',
-                title: '标题',
-                display: 'accordion',
+                name: 'yAxisCfg.enable',
+                title: {
+                  label: '显示 Y 轴',
+                },
+                setter: 'BoolSetter',
+                extraProps: {
+                  setValue: (target, value) => {
+                    if(value === false) {
+                      target.getProps().setPropValue('yAxis', false);
+                    }
+                  },
+                },
+              },
+              {
+                name: 'yAxis.position',
+                title: '位置',
                 condition: (target) => {
-                  return target.getProps().getPropValue('legendCfg.enable') === true;
+                  return target.getProps().getPropValue('yAxisCfg.enable') === true;
                 },
                 setter: {
                   componentName: 'RadioGroupSetter',
                   props: {
                     options: [
-                      { title: '横向布局', value: 'horizontal' },
-                      { title: '纵向布局', value: 'vertical' },
+                      { title: 'top', value: 'top' },
+                      { title: 'bottom', value: 'bottom' },
+                      { title: 'left', value: 'left' },
+                      { title: 'right', value: 'right' },
                     ],
                   },
+                },
+              },
+              {
+                name: 'yAxis.title',
+                title: '标题',
+                type: 'group',
+                display: 'accordion',
+                condition: (target) => {
+                  return target.getProps().getPropValue('yAxisCfg.enable') === true;
+                },
+                items: [
+                  {
+                    name: 'yAxis.title.text',
+                    title: '文本',
+                    setter: 'StringSetter',
+                  },
+                  {
+                    name: 'yAxis.title.position',
+                    title: '位置',
+                    setter: {
+                      componentName: 'RadioGroupSetter',
+                      props: {
+                        options: [
+                          { title: 'center', value: 'center' },
+                          { title: 'start', value: 'start' },
+                          { title: 'end', value: 'end' },
+                        ],
+                      },
+                    },
+                  },
+                ]
+              },
+            ],
+          },
+          {
+            name: 'slider',
+            type: 'group',
+            display: 'accordion',
+            title: {
+              label: '缩略轴',
+            },
+            items: [
+              {
+                name: 'sliderCfg.enable',
+                title: {
+                  label: '启用缩略轴',
+                },
+                setter: 'BoolSetter',
+                extraProps: {
+                  setValue: (target, value) => {
+                    if(value === false) {
+                      target.getProps().setPropValue('slider', false);
+                    }
+                  },
+                },
+              },
+              {
+                name: 'slider.start',
+                title: '默认起始位置',
+                condition: (target) => {
+                  return target.getProps().getPropValue('sliderCfg.enable') === true;
+                },
+                setter: {
+                  componentName: 'NumberSetter',
+                },
+              },
+              {
+                name: 'slider.end',
+                title: '默结束位置',
+                condition: (target) => {
+                  return target.getProps().getPropValue('sliderCfg.enable') === true;
+                },
+                setter: {
+                  componentName: 'NumberSetter',
+                },
+              },
+              {
+                name: 'slider.height',
+                title: '高度',
+                condition: (target) => {
+                  return target.getProps().getPropValue('sliderCfg.enable') === true;
+                },
+                setter: {
+                  componentName: 'NumberSetter',
                 },
               },
             ],
