@@ -21,6 +21,30 @@ module.exports = {
           daily: `https://alifd.alicdn.com/npm/${name}@${version}`,
         },
         engineScope: '@alilc',
+        // builtinAssets: [
+        //   {
+        //     packages: [
+        //       {
+        //         package: '@ant-design/icons',
+        //         version: '4.5.0',
+        //         urls: [
+        //           'https://g.alicdn.com/code/npm/@ali/ant-design-icons-cdn/4.5.0/index.umd.min.js',
+        //         ],
+        //         library: 'icons',
+        //       },
+        //       {
+        //         package: 'antd',
+        //         version: '4.19.5',
+        //         urls: [
+        //           'https//g.alicdn.com/code/lib/antd/4.19.5/antd.min.js',
+        //           'https//g.alicdn.com/code/lib/antd/4.19.5/antd.min.css',
+        //         ],
+        //         library: 'antd',
+        //       },
+        //     ],
+        //     components: [],
+        //   },
+        // ],
       },
     ],
     [

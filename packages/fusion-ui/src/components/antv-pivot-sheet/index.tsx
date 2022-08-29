@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PivotSheet } from '@antv/s2';
+import { SheetComponent } from '@antv/s2-react';
 import '@antv/s2-react/dist/style.min.css';
 const s2DataConfig = {
   fields: {
@@ -113,7 +114,7 @@ const s2Options = {
 };
 const AntPivotSheet = (props) => {
   const [dataCfg, setDataCfg] = useState(s2DataConfig);
-  return <div />;
+  return <SheetComponent dataCfg={dataCfg} options={s2Options}></SheetComponent>;
 };
 
 export default AntPivotSheet;
