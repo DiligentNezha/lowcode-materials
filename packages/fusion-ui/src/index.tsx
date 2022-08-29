@@ -11,6 +11,8 @@ export { default as LineChart } from './components/line-chart';
 export { default as AreaChart } from './components/area-chart';
 export { default as DonutChart } from './components/donut-chart';
 
+export { default as AntPivotSheet } from './components/antv-pivot-sheet';
+
 export * from './components/page-header';
 export * from './components/pro-form';
 export * from './components/pro-table';

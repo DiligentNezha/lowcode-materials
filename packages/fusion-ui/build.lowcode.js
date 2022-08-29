@@ -33,5 +33,16 @@ module.exports = {
         },
       },
     ],
+    [
+      '@alilc/build-plugin-alt',
+      {
+        type: 'component',
+        inject: true,
+        library,
+        // 配置要打开的页面，在注入调试模式下，不配置此项的话不会打开浏览器
+        // 支持直接使用官方 demo 项目：https://lowcode-engine.cn/demo/index.html
+        openUrl: 'http://192.168.100.38:3334/?debug',
+      },
+    ],
   ],
 };
