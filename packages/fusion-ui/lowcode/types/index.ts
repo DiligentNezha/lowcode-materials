@@ -1,4 +1,4 @@
-import { ComponentMetadata, Snippet, FieldConfig, SettingTarget } from '@ali/lowcode-types';
+import { ComponentMetadata, Snippet, FieldConfig, SettingTarget } from '@alilc/lowcode-types';
 
 export interface ISnippet extends Snippet {
   label?: string;

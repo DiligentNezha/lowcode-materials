@@ -1,4 +1,4 @@
-import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 
 import props from './props';
 

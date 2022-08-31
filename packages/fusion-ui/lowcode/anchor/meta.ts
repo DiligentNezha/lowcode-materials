@@ -1,4 +1,5 @@
 import { hideProp } from '../utils';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 
 const anchorLength = (Math.floor(Math.random() * 10000) % 10) + 1;
 const dataSource = [];

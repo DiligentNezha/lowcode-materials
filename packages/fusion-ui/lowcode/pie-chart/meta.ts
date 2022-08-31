@@ -1,4 +1,4 @@
-import { ComponentMetadata } from '@ali/lowcode-types';
+import { ComponentMetadata } from '@alilc/lowcode-types';
 import { actionConfigure } from '../common/chart-action';
 import { wrapWithCard } from '../pro-card/meta';
 

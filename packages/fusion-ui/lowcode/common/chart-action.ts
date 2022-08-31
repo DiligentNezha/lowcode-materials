@@ -1,4 +1,5 @@
-export const actionConfigure = [
+import { FieldConfig } from '@alilc/lowcode-types';
+export const actionConfigure: FieldConfig[] = [
   {
     type: 'field',
     name: 'cardProps.actionButtons',

@@ -1,4 +1,4 @@
-import { ComponentMetadata } from '@ali/lowcode-types';
+import { ComponentMetadata } from '@alilc/lowcode-types';
 
 const FilterItemMeta: ComponentMetadata = {
   componentName: 'FilterItem',
@@ -57,7 +57,8 @@ const FilterItemMeta: ComponentMetadata = {
             'en-US': 'labelCol',
             'zh-CN': 'label 标签布局',
           },
-          tip: 'labelCol | label 标签布局，通 `<Col>` 组件，设置 span offset 值，如 {span: 8, offset: 16}，该项仅在垂直表单有效',
+          tip:
+            'labelCol | label 标签布局，通 `<Col>` 组件，设置 span offset 值，如 {span: 8, offset: 16}，该项仅在垂直表单有效',
         },
         name: 'labelCol',
         description:
@@ -109,7 +110,8 @@ const FilterItemMeta: ComponentMetadata = {
             'en-US': 'extra',
             'zh-CN': '额外的提示信息，和 ',
           },
-          tip: 'extra | 额外的提示信息，和 help 类似，当需要错误信息和提示文案同时出现时，可以使用这个。 位于错误信息后面',
+          tip:
+            'extra | 额外的提示信息，和 help 类似，当需要错误信息和提示文案同时出现时，可以使用这个。 位于错误信息后面',
         },
         name: 'extra',
         description:
@@ -144,7 +146,8 @@ const FilterItemMeta: ComponentMetadata = {
             'en-US': 'hasFeedback',
             'zh-CN': '配合 validat',
           },
-          tip: 'hasFeedback | 配合 validateState 属性使用，是否展示 success/loading 的校验状态图标, 目前只有Input支持',
+          tip:
+            'hasFeedback | 配合 validateState 属性使用，是否展示 success/loading 的校验状态图标, 目前只有Input支持',
         },
         name: 'hasFeedback',
         description:
@@ -179,7 +182,8 @@ const FilterItemMeta: ComponentMetadata = {
             'en-US': 'size',
             'zh-CN': '单个 Item 的 ',
           },
-          tip: 'size | 单个 Item 的 size 自定义，优先级高于 Form 的 size, 并且当组件与 Item 一起使用时，组件自身设置 size 属性无效。',
+          tip:
+            'size | 单个 Item 的 size 自定义，优先级高于 Form 的 size, 并且当组件与 Item 一起使用时，组件自身设置 size 属性无效。',
         },
         name: 'size',
         description:

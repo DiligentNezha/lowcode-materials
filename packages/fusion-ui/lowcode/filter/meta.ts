@@ -1,4 +1,4 @@
-import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 import { formItemsProps } from '../pro-form/common/form-base-props';
 import { showWithLabelAlign } from '../utils';
 import { operations } from '../common';
@@ -42,7 +42,8 @@ const FilterMeta: ComponentMetadata = {
   category: '表格类',
   tags: ['业务组件'],
   docUrl: '',
-  icon: 'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
+  icon:
+    'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
   devMode: 'proCode',
   npm: {
     package: '@alifd/fusion-ui',

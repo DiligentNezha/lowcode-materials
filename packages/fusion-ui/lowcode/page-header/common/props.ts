@@ -1,4 +1,4 @@
-import { FieldConfig } from '@ali/lowcode-types';
+import { FieldConfig } from '@alilc/lowcode-types';
 
 const props: FieldConfig[] = [
   {

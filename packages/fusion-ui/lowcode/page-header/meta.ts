@@ -1,4 +1,4 @@
-import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 import { operations } from '../common';
 import props from './common/props';
 
@@ -8,7 +8,8 @@ const PageHeaderMeta: ComponentMetadata = {
   group: '精选组件',
   title: '页头',
   docUrl: '',
-  icon: 'https://img.alicdn.com/imgextra/i2/O1CN01q3ZRHx24rrQ9ysyU8_!!6000000007445-55-tps-56-56.svg',
+  icon:
+    'https://img.alicdn.com/imgextra/i2/O1CN01q3ZRHx24rrQ9ysyU8_!!6000000007445-55-tps-56-56.svg',
   devMode: 'procode',
   npm: {
     package: '@alifd/fusion-ui',

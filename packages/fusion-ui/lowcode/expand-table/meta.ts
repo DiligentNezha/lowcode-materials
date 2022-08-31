@@ -1,4 +1,4 @@
-import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 import { proTableMeta } from '../pro-table/pro-table-meta';
 import { mockProTableRow, mockId } from '../pro-table/utils';
 import { isJSExpression } from '../utils';

@@ -1,4 +1,4 @@
-import { ComponentMetadata } from '@ali/lowcode-types';
+import { ComponentMetadata } from '@alilc/lowcode-types';
 
 const ProTableSlotMeta: ComponentMetadata = {
   componentName: 'ProTableSlot',

@@ -1,4 +1,4 @@
-import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 import { default as formBaseProps } from '../pro-form/common/form-base-props';
 
 const ChildFormMeta: ComponentMetadata = {

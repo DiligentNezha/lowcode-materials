@@ -1,4 +1,4 @@
-import { ComponentMetadata, Snippet } from '@ali/lowcode-types';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 import { hideProp } from '../utils';
 import { operationProps } from '../common';
 
@@ -390,7 +390,11 @@ const ProDialogMeta: ComponentMetadata = {
               const newNode = node.document.createNode(layoutBlockNode(blockLen).exportSchema());
               node.insertBefore(newNode, curDragMent, false);
               curDragMent.remove(false);
-              newNode.children.get(0).children.get(0).children.get(0).select();
+              newNode.children
+                .get(0)
+                .children.get(0)
+                .children.get(0)
+                .select();
             }, 1);
           };
 
@@ -442,7 +446,8 @@ const ProDialogMeta: ComponentMetadata = {
       },
     },
   },
-  icon: 'https://img.alicdn.com/imgextra/i1/O1CN01n5JLZG1aBmYZlckSx_!!6000000003292-55-tps-56-56.svg',
+  icon:
+    'https://img.alicdn.com/imgextra/i1/O1CN01n5JLZG1aBmYZlckSx_!!6000000003292-55-tps-56-56.svg',
   category: '布局容器类',
 };
 const snippets: Snippet[] = [
